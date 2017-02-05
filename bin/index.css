@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@-webkit-keyframes BackgroundFlow {
+		0%{background-position:51% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:51% 0%}
+}
+@-moz-keyframes BackgroundFlow {
+		0%{background-position:51% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:51% 0%}
+}
+@keyframes BackgroundFlow { 
+		0%{background-position:51% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:51% 0%}
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+
+	background-attachment: fixed !important;
+	background: linear-gradient(0deg, #ff5e5e, #ffbb87, #ffef87, #abff87, #87b9ff, #dd87ff);
+	background-size: 1200% 1200%;
+	
+	-webkit-animation: BackgroundFlow 45s ease infinite;
+	-moz-animation: BackgroundFlow 45s ease infinite;
+	animation: BackgroundFlow 45s ease infinite;
+}
+
+h1 {
+	font-size: 8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 3em;
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+.placeholder-hero {
+	margin: auto;
+	text-align: center;
+	color: #555555;
+}
