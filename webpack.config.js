@@ -27,7 +27,7 @@ module.exports = {
 				loaders: [
 					'file-loader?name=[name].html',
 					'extract-loader',
-					'html-loader',
+					'html-loader?minimize=true',
 					'pug-html-loader?exports=false',
 				],
 			},
@@ -56,7 +56,6 @@ module.exports = {
 		app: [
 			'./index.scss',
 			'./index.pug',
-			'./main.js',
 		],
 	},
 	output: {

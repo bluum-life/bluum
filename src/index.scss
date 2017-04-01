@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
 @import "variables";
+@import "keepLit";
 
 html {
 	font-family: 'Ubuntu', sans-serif;
@@ -46,7 +46,7 @@ h1 {
 h2 {
 	font-size: 3em;
 	margin-top: 0;
-	margin-bottom: 2em;
+	margin-bottom: 0.4em;
 }
 
 h1, h2 {
