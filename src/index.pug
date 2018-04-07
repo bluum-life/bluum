@@ -21,9 +21,13 @@ html(lang="en")
 			video(autoplay, loop).hero-video
 				source(src="/content/bluum-life.webm" type="video/webm; codecs=vp9")
 				source(src="/content/bluum-life.mp4" type="video/mp4")
-		section#page
-			header.placeholder-hero
-				h1 blϋϋm
-				h2 Light up the night with the world’s most advanced music & dance reactive flower crown
-				.keep-lit
-					include ./keepLit.tpl.pug
+
+		section.bluum-hero
+			h1 blϋϋm
+			p Light up the night with the world’s most advanced music & dance reactive flower crown
+
+		section.bluum-features
+			include ./features.tpl.pug
+
+		section.keep-lit
+			include ./keepLit.tpl.pug
