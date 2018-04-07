@@ -4,22 +4,22 @@
 	}
 
 	input, button {
-		color: #CCC;
-		border-color: #CCC;
+		color: $text-color;
+		border-color: $text-color;
 
 		margin-right: 1em;
 		padding: 6px 12px;
 		line-height: 1.42857143;
-		border: 1px solid #CCC;
+		border: 1px solid $text-color;
 		border-radius: 4px;
 		background-color: rgba(50,50,50,0.1);
 		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, color ease-in-out .15s;
 
 		&:focus {
-			border-color: $accent;
+			border-color: $accent-color;
 			outline: 0;
-			box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba($accent,.6)
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba($accent-color,.6)
 		}
 	}
 
@@ -27,7 +27,7 @@
 		cursor: pointer;
 
 		&:focus {
-			color: $accent;
+			color: $accent-color;
 		}
 	}
 

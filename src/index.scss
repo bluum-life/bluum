@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import "variables";
-@import "keepLit";
 
 html {
 	font-family: 'Ubuntu', sans-serif;
+	background-color: #000;
+
 	font-size: $font-size;
+	color: $text-color;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
 }
 
 h1 {
-	font-size: 8rem;
+	font-size: 6rem;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -40,6 +42,7 @@ h1, h2 {
 		max-height: 100%;
 		min-width: 100%;
 		min-height: 100%;
+		object-fit: cover;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -48,7 +51,6 @@ h1, h2 {
 }
 
 .bluum-content {
-	color: $accent;
 	font-size: 1.25rem;
 	text-shadow: 1px 1px 6px rgba(0, 0, 0, .45);
 
@@ -64,18 +66,27 @@ h1, h2 {
 	-webkit-overflow-scrolling: touch;
 }
 
-.bluum-content p {
-	color: #CCC;
-	margin: 3rem;
-}
-
-.bluum-header, .keep-lit {
+%centered {
 	margin: auto;
 	text-align: center;
+}
 
+
+.bluum-header {
+	@extend %centered;
+	h1 {
+		color: $accent-color;
+	}
+
+	p {
+		margin: 2rem;
+	}
 }
 
 // @todo: no idea why
 .keep-lit {
-	padding-top: 1rem;
+	@extend %centered;
+	padding-top: 1em;
 }
+
+@import "keepLit";

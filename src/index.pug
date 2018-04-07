@@ -2,6 +2,7 @@ doctype
 html(lang="en")
 	head
 		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1")
 		title blϋϋm
 		link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
 		link(rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32")
@@ -18,7 +19,7 @@ html(lang="en")
 
 	body
 		section.bluum-video
-			video(autoplay, loop).hero-video
+			video(autoplay, loop, playsinline, muted).hero-video
 				source(src="/content/bluum-life.webm" type="video/webm; codecs=vp9")
 				source(src="/content/bluum-life.mp4" type="video/mp4")
 
@@ -35,3 +36,4 @@ html(lang="en")
 			//- section.keep-lit
 
 
+		//- section.bluum-social @todo
