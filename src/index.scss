@@ -11,56 +11,71 @@ body {
 	margin: 0;
 }
 
-// #page {
-// 	display: flex;
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	margin: 0;
-// 	overflow: auto;
-// 	-webkit-overflow-scrolling: touch;
-// }
-
 h1 {
-	font-size: 8em;
+	font-size: 8rem;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 3rem;
 	margin-top: 0;
-	margin-bottom: 0.4em;
+	margin-bottom: 0.4rem;
 }
 
 h1, h2 {
 	font-weight: 400;
 }
 
-.placeholder-hero {
-	margin: auto;
-	text-align: center;
-	color: #555555;
+.bluum-video {
+  position: fixed;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+
+	.hero-video {
+		max-width: none;
+		max-height: 100%;
+		min-width: 100%;
+		min-height: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
 }
 
-// .bluum-video {
-//   position: fixed;
-//   top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	margin: 0;
+.bluum-content {
+	color: $accent;
+	font-size: 1.25rem;
+	text-shadow: 1px 1px 6px rgba(0, 0, 0, .45);
 
-// 	.hero-video {
-// 		max-width: none;
-// 		max-height: 100%;
-// 		min-width: 100%;
-// 		min-height: 100%;
-// 		position: absolute;
-// 		top: 50%;
-// 		left: 50%;
-// 		transform: translateX(-50%) translateY(-50%);
-// 	}
-// }
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.bluum-content p {
+	color: #CCC;
+	margin: 3rem;
+}
+
+.bluum-header, .keep-lit {
+	margin: auto;
+	text-align: center;
+
+}
+
+// @todo: no idea why
+.keep-lit {
+	padding-top: 1rem;
+}

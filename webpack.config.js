@@ -63,16 +63,6 @@ module.exports = {
 		path: path.resolve(process.cwd(), 'bin'),
 	},
 	devServer: {
-	// 	publicPath: '/',
-	// 	outputPath: '/',
-	// 	filename: 'app.bundle.js',
-	// 	watchOptions: undefined,
-	// 	watchDelay: undefined,
 		contentBase: [ path.resolve(process.cwd(), 'assets') ],
-	// 	stats: {
-	// 		cached: false,
-	// 		cachedAssets: false,
-	// 		colors: true
-	// 	}
 	}
 };
