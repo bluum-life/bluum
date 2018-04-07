@@ -6,7 +6,7 @@
     "compiler": "rm -rf bin && ./node_modules/webpack/bin/webpack.js && cp assets/* bin/",
     "aws-deploy": "aws s3 sync --acl public-read --delete ./bin",
     "linter": "./node_modules/eslint/bin/eslint.js --fix src/ test/",
-    "server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress",
+    "server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress --watch",
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register src/**/*.spec.js"
   },
   "dependencies": {},
