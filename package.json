@@ -1,6 +1,6 @@
 {
   "name": "bluum",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "c-dante/bluum",
   "scripts": {
     "compiler": "rm -rf bin && ./node_modules/webpack/bin/webpack.js && cp -r assets/* bin/",
