@@ -1,0 +1,15 @@
+.bluum-social {
+	img {
+		$size: 28px;
+		width: $size;
+		height: $size;
+		padding: $size / 3;
+
+		// @media (min-width: $start-md) {
+		// 	$size: 32px;
+		// 	width: $size;
+		// 	height: $size;
+		// 	padding: $size / 4;
+		// }
+	}
+}
